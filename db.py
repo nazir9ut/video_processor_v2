@@ -58,7 +58,6 @@ class PrVideo(BaseModel):
     start_time = DateTimeField()
     length = DecimalField()
     created_at = DateTimeField(default=datetime.datetime.now)
-    # notes = CharField(max_length=500, null=True)
 
 
 
