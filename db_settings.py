@@ -1,3 +1,6 @@
+import helper_socket
+helper_socket.get_lock('running_process')
+
 from db import *
 
 import os
@@ -29,12 +32,6 @@ for monitor in monitors:
     count_events = events.count()
 
     for idx, event in enumerate(events):
-
-        print('count_events')
-        print(count_events)
-
-        print('idx')
-        print(idx)
 
 
         # stop on pre-last element
